@@ -40,6 +40,17 @@ Wanted_Job_Scraper/
 
 ## Quick Start
 
+### Playwright 설치 (처음 1회)
+Playwright는 파이썬 패키지 설치와 별개로 **브라우저 바이너리 설치가 필요**합니다.
+
+```bash
+uv pip install -r requirements.txt
+python -m playwright install chromium
+```
+
+> `python -m playwright install chromium` 은 OS별 브라우저 바이너리를 내려받는 과정이라  
+> `requirements.txt`에 적지 않고, README 설치 단계에만 기재.
+
 ### 1) 환경변수 설정
 - `.env`는 로컬에서만 사용하고 Git에 올리지 않습니다.
 - `.env.example`을 복사해서 `.env`를 만드세요.
